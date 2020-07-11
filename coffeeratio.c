@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 
 		/* Convert string to integer */
 		int arg;
-  	int coffee = atoi(str_coffee);
+		int coffee = atoi(str_coffee);
 		int water = atoi(str_water);
 		int amount = atoi(str_amount);
 		int result;
