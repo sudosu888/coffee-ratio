@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 
 	if(argc >= 4)
 	{
-    char *str_coffee = argv[1];
+		char *str_coffee = argv[1];
 		char *str_water = argv[2];
 		char *str_amount = argv[3];
 
@@ -42,5 +42,11 @@ int main(int argc, char *argv[])
 
 		result = amount / water;
 		printf("Ratio %d:%d = %dg of coffee\n", coffee, water, result);
+	}
+
+	else
+	{
+		printf("ERROR: Invalid syntax\n");
+		printf("'ratio <coffee> <water> <amount> <arguments>'\n");
 	}
 }
