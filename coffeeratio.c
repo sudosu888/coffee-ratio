@@ -12,16 +12,17 @@ int main(int argc, char *argv[])
 
 	if(argc >= 4)
 	{
+		/* Variables */
 		char *str_coffee = argv[1];
 		char *str_water = argv[2];
 		char *str_amount = argv[3];
+		int arg;
+		int result;
 
 		/* Convert string to integer */
-		int arg;
 		int coffee = atoi(str_coffee);
 		int water = atoi(str_water);
 		int amount = atoi(str_amount);
-		int result;
 
 		if(coffee > 1)
 			printf("WARNING: ratio irregular, calculations may not be accurate!\n");
