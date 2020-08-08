@@ -24,15 +24,12 @@ int main(int argc, char *argv[])
 		int water = atoi(str_water);
 		int amount = atoi(str_amount);
 
-		if(coffee > 1)
-			printf("WARNING: ratio irregular, calculations may not be accurate!\n");
-
 		while((arg = getopt(argc, argv, "c")) != -1)
 		{
 			switch(arg)
 			{
 				case 'c' :
-					result = amount * water;
+					result = amount * water / coffee;
 					printf("Ratio %d:%d = %dg of water\n", coffee, water, result);
 					return 0;
 
@@ -41,7 +38,7 @@ int main(int argc, char *argv[])
 			}
 		}
 
-		result = amount / water;
+		result = amount / water * coffee;
 		printf("Ratio %d:%d = %dg of coffee\n", coffee, water, result);
 	}
 
